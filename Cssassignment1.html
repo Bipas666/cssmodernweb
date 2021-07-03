@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+         box-sizing: border-box;
+
+        }
+        .all{
+            
+            background-image: url(forest.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 750px;
+
+        }
+        
+        .main{
+            
+            display: flex;       
+            color:rgb(253, 253, 253);  
+            opacity: 1;
+            cursor: pointer;
+            justify-content:space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+
+        .main ul li{
+
+            color: rgb(255, 88, 10);
+            font-size:medium;
+            padding: 25px;
+            display: inline-block;
+            
+        }
+
+        ul li:hover{
+            color: chartreuse;
+
+        }
+        #home{
+            color: chartreuse;
+        }
+        .fronttext{
+            margin: 200px;
+            padding: 20px;
+            padding-left: 200px;
+            color: rgb(255, 255, 255);
+        }
+        .frontbtn {
+            padding-top: 50px; 
+            margin-bottom: 20px;
+        }
+        .btn{
+            border-radius: 10px;
+            padding: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        
+        #btn1{
+            margin-left: 180px;
+            background-color: rgb(245, 244, 244);
+            color: rgb(97, 145, 3);
+        }
+        #btn1:hover{
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+        #btn2:hover{
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+        #btn2{
+            
+            color: rgb(245, 244, 244);
+            background-color: rgb(97, 145, 3);
+        }
+
+        #firsttext{
+            padding-left: 150px;
+        }
+        .fronttext h1{
+            padding-left: 40px;
+        }
+
+        .secondpage{
+            
+            padding-bottom: 120px;
+        }
+        .title{
+            color: rgb(75, 139, 11);
+        }
+        #text1{
+            padding-left: 250px;
+        }
+        .maintext{
+            margin:150px;
+            margin-left: 350px;
+        }
+        .main2text{
+            padding-bottom: 15px;
+            padding-left: 70px;
+        }
+        #para1{
+            padding-left: 150px;
+
+        }
+        .nexttext{
+            max-width: 1350px;
+            margin: 20px;
+            padding-left: 100px;
+        }
+        .nexttext .imagefloat{
+            max-width: 1200px;
+            float: left;
+            width: 50%;
+            height: auto;
+            cursor: pointer;
+            padding-right: 100px;
+            margin-bottom: 150px;
+            
+        }
+
+        .nexttext .btnn{
+            border: 2.5px solid rgb(0, 183, 255);
+            padding: 40px;
+            border-radius: 60px;
+            margin: 10px;
+        }
+        .buttontext{
+            display: flex;
+            padding-left: 30px;
+        }
+        #btntxt2{
+            padding-left: 68px;
+            padding-right: 75px;
+        }
+        .thirdpage{
+            background-image: url(forest3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 150px;
+            height: 800px;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+        }
+        .thirdtitle{
+            color: #fff;
+        }
+        .thirdtitle > h2{
+            position: relative;
+            top: 50px;
+            padding-left: 650px;
+        }
+        
+        .thirdtitle > p{
+            padding-left: 300px;
+            
+        }
+
+        .boxes{
+            
+            margin: 150px 0px 0px 130px;
+            max-width:1000px ;
+            height: 400px;
+        }
+        .box{
+            background-color: #fff;
+            float: left;
+            border:0px solid black;
+            padding: 20px;
+            margin: 10px;
+            width:300px;
+            height: 150px;
+            cursor: pointer;
+        }
+        .box:hover{
+            background-color: rgb(211, 211, 211);
+        }
+        .fourthpage .box4{
+            margin: 200px 0px 0px 400px ;
+        }
+        .box4 > p{
+           margin-left: 200px;
+        }
+        .fourthpage .image4 > img{
+            float: left;
+            margin: 100px 0px 0px 0px;
+            max-width: 350px;
+            height: auto;
+        }
+
+        .fifthpage{
+
+            margin: 900px 0px 0px 0px;
+            max-width:1350px ;
+            height: 200px;
+            background-color: rgb(113, 240, 113);
+            
+        }
+        .fifthpage .incon{
+            
+            float: left;
+            border:0px solid black;
+            padding: 50px 150px 20px 150px;
+            max-width:200px;
+
+        }
+        .wite{
+            color: rgb(255, 255, 255);
+        }
+
+        .sixthpage{
+            position: relative;
+            margin-bottom: 100px;
+        }
+        .sixthpage .box6{
+            margin: 100px 0px 80px 800px  ;
+        }
+        .box6 > p{
+            position: absolute;
+            left: 350px;    
+        }
+         
+         .sixthpage > img{
+             margin-left: 80px;
+             max-width: 350px;
+         }
+         .box7{
+            padding: 30px;
+              box-shadow: 5px 5px 15px 5px #000000;
+            position:absolute;
+             top: 200px;
+             left: 720px;
+         }
+         .box8{
+            padding: 30px;
+              box-shadow: 5px 5px 15px 5px #000000;
+            position:absolute;
+             top: 350px;
+             left: 720px;
+         }
+         .box9{
+            padding: 30px;
+              box-shadow: 5px 5px 15px 5px #000000;
+            position:absolute;
+             top: 500px;
+             left: 720px;
+         }
+
+        
+         .seventhpage .seventhtitle{
+             position: relative;
+             left: 550px;
+         }
+         .seventhtitle > p{
+             position: absolute;
+             top: 20px;
+             left: 250px;
+         }
+
+         .boxes10{
+            background-image: url(forest3.jpg);
+            margin: 50px 0px 0px 0px;
+            max-width:1350px ;
+            height: 500px;
+            padding-left: 200px;
+        
+        }
+        .box10{
+            background-color: #fff;
+            float: left;
+            border:0px solid black;
+            padding: 30px;
+            margin: 80px 2px 30px 20px;
+            width:200px;
+            height: 350px;
+            cursor: pointer;
+        }
+        .box10 >h3{
+            color: rgb(155, 165, 14);
+            font-size: x-large;
+            margin:20px 0px 30px 10px;
+        }
+        .btn10{
+            margin-top: 60px;
+            margin-left: 20px;
+            color: rgb(245, 244, 244);
+            background-color: rgb(97, 145, 3);
+            border-radius: 8px;
+            padding: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        .btn10:hover{
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .eighthpage{
+            position: relative;
+            margin-bottom: 100px;
+        }
+        .eighthpage .title8{
+            margin: 100px 0px 80px 800px  ;
+        }
+        .title8 > p{
+            position: absolute;
+            left: 350px;    
+        }
+
+        .eighthpage .incon8{
+            
+            float: left;
+            border:0px solid black;
+            padding: 10px 40px 15px 40px;
+            margin: 20px 10px 20px 100px;
+            max-width:300px;
+            max-height: 300px;
+
+        }
+
+        .eighthpage > img{
+            max-width: 200px;
+            max-height: 150px;
+            margin: 50px 80px 0px 150px;
+        }
+
+        .ninthpage{
+            background-color: #91cf33;
+            margin-top: 300px;
+            padding: 80px;
+            padding-left: 350px;
+        }
+
+        .playbutton{
+            size: 100px;
+            border:5px solid black;
+            border-radius: 60px;
+            margin-left: 270px;
+            cursor: pointer;
+        }
+        .playbutton:hover{
+            border: 5px solid white;
+        }
+        .head92{
+            margin-left: 175px;
+            color: white;
+        }
+        .tenthpage{
+            position: relative;
+            margin-bottom: 100px;
+        }
+        .tenthpage .box101{
+            margin: 100px 0px 80px 800px  ;
+        }
+        .box101 > p{
+            position: absolute;
+            left: 350px;    
+        }
+        .tenthpage .info10{
+            float: left;
+            margin: 50px 15px 200px 45px;
+
+        }
+        .tenthpage .info10 > img{
+            max-width: 250px;
+        }
+
+        .eleventhpage{
+            background-image: url(forest3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 600px;
+            max-height: 700px;
+            padding-bottom: 150px;
+        }
+
+        .eleventhpage .eleventhtitle{
+          
+             position: relative;
+             top: 80px;
+             left: 450px;
+             color: white;
+             
+         }
+         .eleventhtitle > p{
+             position: absolute;
+             top: 20px;
+             left: 250px;
+         }
+         .con11> img{
+             max-width: 150px;
+         }
+         .con11{
+             display: inline-block;
+             padding: 30px;
+             margin: 200px 50px 20px 80px;
+             background-color: #fff;
+             border: 0px solid black;
+             max-width: 300px;
+             max-height: 550px;
+         }
+
+         .twelvethpage{
+            position: relative;
+            margin-bottom: 100px;
+        }
+        .twelvethpage .box121{
+            margin: 100px 0px 80px 800px  ;
+        }
+        .box121 > p{
+            position: absolute;
+            left: 350px;    
+        }
+        input[type=submit] {
+            background-color: #36d322;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            width: 200px;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+}
+        .enter {
+            max-width: 550px;
+            border-radius: 5px;
+            background-color: #fffdfd;
+            padding: 20px;
+            padding-left: 80px;
+        }
+        .coninfo{
+            margin: 50px;
+            max-width: 400px;
+            padding-right: 40px;
+            border: 0px solid black;
+        }
+        .conall{
+            position: absolute;
+            top: 120px;
+            left: 680px;
+            border: 0px solid black;
+        }
+        .map{
+            margin-top: 100px;
+            max-width: 1350px;
+        }
+        .googlemap{
+            width: 100%;
+            cursor: grab;
+
+        }
+        .lastpage{
+            color: #Fff;
+            background-color: rgb(67, 128, 6);
+            padding: 100px 0px 100px 500px;
+        }
+        .lastpage>i{
+            padding-left: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/69fede4940.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssAssignment</title>
+</head>
+<body>
+    <div class="all">
+
+    <div class="main">
+        <h1>forest</h1>
+        <ul>
+            <li id="home">Home</li>
+            <li> About</li>
+            <li>Service</li>
+            <li>Gallery</li>
+            <li>Team</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="fronttext">
+        <H1 id="firsttext">Global warming</H1>
+        <h1>SAVE FOREST AND SAVE EARTH</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+             elit. Alias quibusdam obcaecati expedita labore </p>
+        <div class="frontbtn">
+            <button class="btn" id="btn1">About us</button>
+            <button class="btn" id="btn2">Join us</button>
+        </div>
+    </div>
+</div>
+
+<div class="secondpage">
+    <div class="maintext">
+    <h2 class="title" id="text1">What do we do</h2>
+    <h2 class="main2text">STANDING TOGETHER FOR A BETTER WORLD</h2>
+    <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+         Porro eos earum vitae eum perspiciatis d</p>
+        </div>
+
+
+    <div class="nexttext">
+    
+    <img src="tiger_image.jpg" class="imagefloat">
+    <h2 class="title">About us</h2> 
+    <h3>we cannot afford to fail <br>
+        in our mission to save a living planet</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+         Eius cumque ut, mollitia quo architecto omnis autem fugit <br>
+        cupiditate, aliquam placeat quis et non consectetur nemo officia nostrum pariatur consequuntur harum.</p>  
+    <button class="btnn">90%</button>
+    <button class="btnn">80%</button>
+    <button class="btnn">75%</button> <br> <br>
+    <div class="buttontext">
+    <h4>Save Plants</h4>
+    <h4 id="btntxt2">Planting</h4>
+    <h4>Save Tress</h4>
+    </div> 
+    </div>
+
+    <div class="thirdpage">
+        <div class="thirdtitle">
+            <h2 class="title">What we provide</h2>
+            <h2>Our services</h2>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Repudiandae excepturi b</p>   
+    </div>
+    <div class="boxes">
+        <div class="box">
+            <i class="fas fa-spa"></i>
+        <h2 class="title">planting</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+             elit. Culpa aperiam earum dicta n</p>
+            </div>
+         <div class="box">
+            <i class="fas fa-paw"></i>
+            <h2 class="title">Wild life</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                     elit. Culpa aperiam earum dicta n</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-leaf"></i>
+                    <h2 class="title">Save plants</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                             elit. Culpa aperiam earum dicta n</p>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-hand-holding-water"></i>
+                            <h2 class="title">Watering</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                     elit. Culpa aperiam earum dicta n</p>
+                                </div>
+                                <div class="box">
+                                    <i class="fas fa-tree"></i>
+                                    <h2 class="title">Save trees</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                             elit. Culpa aperiam earum dicta n</p>
+                                        </div>
+                                        <div class="box">
+                                            <i class="fab fa-pagelines"></i>
+                                            <h2 class="title">Eco climate</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                                     elit. Culpa aperiam earum dicta n</p>
+                                                </div>
+    </div>
+</div>
+
+    <div class="fourthpage">
+        <div class="box4">
+            <H2 class="title">See our work</H2>
+            <h2>Our Gallery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, 
+                ipsam dolor velit rem provident repellendus nam sunt 
+                nihil accusamus officiis incidunt fugiat, aut id itaque beatae quis sequi, consequuntur qui?</p>
+        </div>
+        <div class="image4">
+        <img src="forest3.jpg" alt="">
+        <img src="tiger_image.jpg" alt="">
+        <img src="forest.jpg" alt="">
+        <img src="extra.jpg" alt="">
+
+         </div>
+    
+    </div>
+
+    
+
+    <div class="fifthpage">
+        <div class="incon">
+            <i class="fas fa-paw"></i>
+            <h2>1200</h2>
+            <h2 class="wite">Save</h2>
+        </div>
+        <div class="incon">
+            <i class="fas fa-smile-beam"></i>
+            <h2>2000</h2>
+            <h2 class="wite">Projects</h2>
+        </div>
+        <div class="incon">
+            <i class="fas fa-leaf"></i>
+            <h2>4000</h2>
+            <h2 class="wite">Plants</h2>
+        </div>
+        <div class="incon">
+            <i class="fas fa-globe-americas"></i>
+            <h2>200</h2>
+            <h2 class="wite">Countries</h2>
+        </div>
+    </div>
+
+    <div class="sixthpage">
+        <div class="box6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, <br>
+                ipsam id itaque beatae quis sequi, consequuntur qui?</p>
+            <H2 class="title">Our hardwork</H2>
+            <h2>Our Features</h2>
+        </div>
+            <img src="planting.jpg" alt="">
+
+            <div class="box7">
+            <i class="fas fa-leaf"></i>
+            <H2 class="title">Planting Trees and Plants</H2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, facere deleniti.</p>
+            </div>
+            <div class="box8">
+                <i class="fas fa-leaf"></i>
+                <H2 class="title">Change Climate Bio-Epoxy</H2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, facere deleniti.</p>
+                </div>
+                <div class="box9">
+                    <i class="fas fa-leaf"></i>
+                    <H2 class="title">Reduce Pollution For life</H2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, facere deleniti.</p>
+                    </div> 
+    </div>
+
+    <div class="seventhpage">
+        <div class="seventhtitle">
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Repudiandae excepturi b</p>
+            <h2 class="title">What we provide</h2>
+            <h2>Our services</h2>   
+        </div>
+    <div class="boxes10">
+        <div class="box10">
+            
+        <h2 class="title">GOLDEN</h2>
+        <h3 class="title">$50 / month</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+             elit. Culpa aperiam earum dicta n</p>
+             <button class="btn10">Book now</button>
+            </div>
+         <div class="box10">
+            <h2 class="title">PREMIUM</h2>
+            <h3 class="title">$60 / month</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                     elit. Culpa aperiam earum dicta n</p>
+                     <button class="btn10">Book now</button>
+                </div>
+                <div class="box10">    
+                    <h2 class="title">PLATINUM</h2>
+                    <h3 class="title">$80 / month</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                             elit. Culpa aperiam earum dicta n</p>
+                             <button class="btn10">Book now</button>
+                        </div>
+                        <div class="box10">
+                            <h2 class="title">SILVER</h2>
+                            <h3 class="title">$90 / month</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                     elit. Culpa aperiam earum dicta n</p>
+                                     <button class="btn10">Book now</button>
+                                </div>
+
+
+    </div>
+
+    <div class="eighthpage">
+        <div class="title8">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, <br>
+                ipsam id itaque beatae quis sequi, consequuntur qui?</p>
+            <H2 class="title">What people say</H2>
+            <h2>Our clients</h2>
+        </div>
+        <img src="ma.jpg" alt="">
+        <img src="ma.jpg" alt="">
+        <img src="ma.jpg" alt="">
+        <div class="incon8">
+            <h2 class="title">Bipas Koirala</h2>
+            <h2 >Clients</h2>
+            <p>Lorem ipsum dolor sit 
+                amet consectetur, adipisicing elit. Officiis hic possimus, laudantium at delectus reprehenderit!</p>
+        </div>
+        <div class="incon8">
+            <h2 class="title">Bipas Koirala</h2>
+            <h2 >Clients</h2>
+            <p>Lorem ipsum dolor sit 
+                amet consectetur, adipisicing elit. Officiis hic possimus, laudantium at delectus reprehenderit!</p>
+        </div>
+        <div class="incon8">
+            <h2 class="title">Bipas Koirala</h2>
+            <h2 >Clients</h2>
+            <p>Lorem ipsum dolor sit 
+                amet consectetur, adipisicing elit. Officiis hic possimus, laudantium at delectus reprehenderit!</p>
+        </div>
+
+    </div> 
+
+    <div class="ninthpage">
+        <button class="playbutton"><i class="fas fa-play-circle fa-3x"></i></button>
+        <h2 class="head92">Save Forest And Nature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quisquam deserunt debitis et! Minus!</p>
+    </div>
+
+    <div class="tenthpage">
+        <div class="box101">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, <br>
+                ipsam id itaque beatae quis sequi, consequuntur qui?</p>
+            <H2 class="title">We are best</H2>
+            <h2>Our Volunteer</h2>
+        </div>
+        <div class="info10">
+            <img src="tiger_image.jpg" alt="">
+            <h2 class="title">Lily will</h2>
+            <h3>Volunteer</h3>
+            <i class="fab fa-facebook fa-1x"></i> 
+            <i class="fab fa-instagram fa-1x"></i>
+            <i class="fab fa-twitter fa-1x"></i>
+        </div>
+        <div class="info10">
+            <img src="tiger_image.jpg" alt="">
+            <h2 class="title">Lily will</h2>
+            <h3>Volunteer</h3>
+            <i class="fab fa-facebook fa-1x"></i> 
+            <i class="fab fa-instagram fa-1x"></i>
+            <i class="fab fa-twitter fa-1x"></i>
+        </div>
+        <div class="info10">
+            <img src="tiger_image.jpg" alt="">
+            <h2 class="title">Lily will</h2>
+            <h3>Volunteer</h3>
+            <i class="fab fa-facebook fa-1x"></i> 
+            <i class="fab fa-instagram fa-1x"></i>
+            <i class="fab fa-twitter fa-1x"></i>
+        </div>
+        <div class="info10">
+            <img src="tiger_image.jpg" alt="">
+            <h2 class="title">Lily will</h2>
+            <h3>Volunteer</h3>
+            <i class="fab fa-facebook fa-1x"></i> 
+            <i class="fab fa-instagram fa-1x"></i>
+            <i class="fab fa-twitter fa-1x"></i>
+        </div>
+        <div class="eleventhpage">
+            <div class="eleventhtitle">
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Repudiandae excepturi b</p>
+                <h2 class="title">see our events</h2>
+                <h2>Our services</h2>   
+            </div>
+            <div class="con11">
+              <img src="tiger_image.jpg" alt="">
+              <h4>Blog</h4>
+              <h2 class="title">Blog name</h2>
+              <p>Lorem ipsum dolor sit amet 
+                  consectetur, adipisicing elit. Eaque fugit, fuga aspernatur vero tempora quidem.</p>
+            </div>
+            <div class="con11">
+                <img src="tiger_image.jpg" alt="">
+                <h4>Blog</h4>
+                <h2 class="title">Blog name</h2>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur, adipisicing elit. Eaque fugit, fuga aspernatur vero tempora quidem.</p>
+              </div>
+              <div class="con11">
+                <img src="tiger_image.jpg" alt="">
+                <h4>Blog</h4>
+                <h2 class="title">Blog name</h2>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur, adipisicing elit. Eaque fugit, fuga aspernatur vero tempora quidem.</p>
+              </div>
+
+        </div>
+
+    </div>
+    <div class="twelvethpage">
+        <div class="box121">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, <br>
+                ipsam id itaque beatae quis sequi, consequuntur qui?</p>
+            <H2 class="title">Get in Touch</H2>
+            <h2>Contact US</h2>
+        </div>
+        <div class="enter">
+            <form action="">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."> <br><br>   
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="conall">
+        <div class="coninfo">
+            <i class="fas fa-home fa-2x"></i>
+            <h2 class="title">Address</h2>
+            <p>South Brisbane,Old 4101 Australia</p>
+        </div>
+        <div class="coninfo">
+            <i class="fas fa-phone fa-2x"></i>
+            <h2 class="title">Phone</h2>
+            <p>+977-0123456789</p>
+        </div>
+        <div class="coninfo">
+            <i class="fas fa-envelope fa-2x"></i>
+            <h2 class="title">Email</h2>
+            <p>abc@gmail.com</p>
+        </div>
+        </div>
+        </div>
+        <div class="map">
+            <iframe class="googlemap"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.943358118024!2d85.34544467326158!3d27.67181303294701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f753f37049%3A0x52b660b9127129b9!2sNarephate%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1625306423981!5m2!1sen!2snp" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="lastpage">
+        <p>All rights reserved@forest</p> 
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
