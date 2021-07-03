@@ -37,6 +37,10 @@
             display: inline-block;
             
         }
+        .main a{
+            color: rgb(255, 88, 10);
+            text-decoration: none;
+        }
 
         ul li:hover{
             color: chartreuse;
@@ -60,6 +64,10 @@
             padding: 10px;
             font-size: medium;
             cursor: pointer;
+        }
+        .btn a{
+            text-decoration: none;
+            color: rgb(207, 136, 4);
         }
         
         #btn1{
@@ -468,10 +476,11 @@
         }
         .lastpage{
             color: #Fff;
-            background-color: rgb(67, 128, 6);
+            background-color: rgb(141, 219, 63);
             padding: 100px 0px 100px 500px;
         }
         .lastpage>i{
+            padding-top: 20px;
             padding-left: 15px;
             color: rgb(0, 0, 0);
         }
@@ -490,11 +499,11 @@
         <h1>forest</h1>
         <ul>
             <li id="home">Home</li>
-            <li> About</li>
-            <li>Service</li>
-            <li>Gallery</li>
-            <li>Team</li>
-            <li>Contact</li>
+            <li><a href="#about">About</a> </li>
+            <li> <a href="#Service">Service</a> </li>
+            <li> <a href="#Gallery">Gallery</a> </li>
+            <li> <a href="#Team">Team</a> </li>
+            <li> <a href="#Contact">Contact</a> </li>
         </ul>
     </div>
     <div class="fronttext">
@@ -503,13 +512,13 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing
              elit. Alias quibusdam obcaecati expedita labore </p>
         <div class="frontbtn">
-            <button class="btn" id="btn1">About us</button>
-            <button class="btn" id="btn2">Join us</button>
+            <button class="btn" id="btn1"> <a href="#about">About us</a> </button>
+            <button class="btn" id="btn2"> <a href="#join">Join us</a> </button>
         </div>
     </div>
 </div>
 
-<div class="secondpage">
+<div id="about" class="secondpage">
     <div class="maintext">
     <h2 class="title" id="text1">What do we do</h2>
     <h2 class="main2text">STANDING TOGETHER FOR A BETTER WORLD</h2>
@@ -537,7 +546,7 @@
     </div> 
     </div>
 
-    <div class="thirdpage">
+    <div id="Service" class="thirdpage">
         <div class="thirdtitle">
             <h2 class="title">What we provide</h2>
             <h2>Our services</h2>
@@ -584,7 +593,7 @@
 </div>
 
     <div class="fourthpage">
-        <div class="box4">
+        <div id="Gallery" class="box4">
             <H2 class="title">See our work</H2>
             <h2>Our Gallery</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, 
@@ -652,7 +661,7 @@
                     </div> 
     </div>
 
-    <div class="seventhpage">
+    <div id="join"class="seventhpage">
         <div class="seventhtitle">
             <p >Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Repudiandae excepturi b</p>
             <h2 class="title">What we provide</h2>
@@ -729,7 +738,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quisquam deserunt debitis et! Minus!</p>
     </div>
 
-    <div class="tenthpage">
+    <div id="Team" class="tenthpage">
         <div class="box101">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, <br>
                 ipsam id itaque beatae quis sequi, consequuntur qui?</p>
@@ -799,7 +808,7 @@
         </div>
 
     </div>
-    <div class="twelvethpage">
+    <div id="Contact"class="twelvethpage">
         <div class="box121">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, <br>
                 ipsam id itaque beatae quis sequi, consequuntur qui?</p>
